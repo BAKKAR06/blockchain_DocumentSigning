@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 40px;
+}
+
+/* Основная карточка */
+.card {
+  width: 420px;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Заголовки */
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Разделитель */
+hr {
+  margin: 15px 0;
+  border: 1px solid #334155;
+}
+
+/* Поля ввода */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Запрет растягивания textarea */
+textarea {
+  resize: vertical;
+}
+
+/* Кнопки */
+.btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+/* Вторая кнопка */
+.secondary {
+  background: #64748b;
+}
+
+.secondary:hover {
+  background: #475569;
+}
+
+/* Маленький текст */
+.small {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #94a3b8;
+  word-break: break-all;
+}

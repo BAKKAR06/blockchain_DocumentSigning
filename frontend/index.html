@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocSign</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>📄 DocSign</h2>
+
+    <button onclick="connect()" class="btn">🔗 Connect Wallet</button>
+    <div class="small" id="wallet"></div>
+
+    <hr>
+
+    <h3>📁 File</h3>
+    <input type="file" id="file">
+    <button onclick="hashFile()" class="btn">Hash File</button>
+    <div class="small" id="hash"></div>
+
+    <hr>
+
+    <h3>👥 Whitelist</h3>
+    <textarea
+      id="addresses"
+      placeholder="0x0eC482e4c53D1fEFad01cD7C03D5A5340F466b12, 0xd8751a580a9bB9812e89befcCB1720dcF5eCF9fE"
+      rows="3"
+    ></textarea>
+
+    <button onclick="createDoc()" class="btn">Create Document</button>
+
+    <hr>
+
+    <h3>✍️ Sign</h3>
+    <input id="docId" placeholder="Document ID">
+    <button onclick="signDoc()" class="btn">Sign</button>
+
+    <button onclick="checkStatus()" class="btn secondary">Check Status</button>
+    <div class="small" id="status"></div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
